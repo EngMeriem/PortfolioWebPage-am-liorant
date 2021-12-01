@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+header {
+    background: rgb(134, 134, 134);
+}
+
+header .logo {
+    width: 30%;
+    float: left;
+}
+
+header .logo img {
+    width: 45%;
+}
+
+header .navbar {
+    width: 70%;
+    float: left;
+    list-style: none;
+}
+
+header .navbar > li {
+    display: inline-block;
+}
+
+header .navbar > li a {
+    color: rgb(252, 164, 193);
+    text-decoration: none;
+    display: block;
+    padding: 30px 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+header .navbar li a:hover {
+    color: rgb(134, 134, 134);
+    background-color: rgb(252, 164, 193);
+    border-radius: 50px;
+}
+
+.clear {
+    clear: both;
+}
+
+.home, .about, .resume, .testimonial, .contact {
+    height: 80vh;
+    background: rgb(223, 223, 223);
+    position: relative;
+}
+
+.home-content, .about-content, .resume-content, .testimonial-content, .contact-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.home-content .cv-link a {
+    display: block;
+    background:rgb(134, 134, 134);
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding-top: 7px;
+    margin: auto;
+}
+
+.home-content .cv-link a:hover {
+    color: rgb(252, 164, 193);
+}
+
+.home .title {
+    text-transform: capitalize;
+    font-size: 3rem;
+}
+
+.home .title span {
+    color: rgb(134, 134, 134);
+    text-transform: uppercase;
+}
+
+.home .title span:hover {
+    color: rgb(252, 164, 193);
+}
+
+.home .home-description, .about .about-description {
+    margin: 10px 0;
+    letter-spacing: 2px;
+}
+
+.about {
+    height: 80vh;
+}
+
+footer {
+    height:7vh;
+    background:rgb(134, 134, 134);
+    color: rgb(252, 164, 193);
+    text-align: center;
+    letter-spacing: 1.5px;
+    padding: 7px 0 ;
+}
+
+.about-content ul {
+    width: 300px;
+    margin: auto;
+}
+
+.resume-content ol li{
+    width: 200px;
+    margin: auto;
+
+}
+
+.contact-content form{
+    margin: 10px;
+}
+
+.contact-content form input,textarea {
+    display: block;
+    width: 500px;
+    margin:10px;
+}
+
+.contact-content input {
+    height: 40px;
+}
